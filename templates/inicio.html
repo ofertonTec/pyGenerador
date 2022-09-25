@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
+    <title>Generador de Msg Personalizados</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo_img" src="img/logo.png" alt="">
+            <p class="logo_titulo">Generar mensajes cobranza </p>
+        </div>
+        <div class="contacto">
+            <img class="contacto_img" src="img/joel.jpg" alt="">
+            <a href="https://ofertontec.github.io/JoelLlCPortafolio/inicio.html" target="_blank">Jllacsahuache</a>
+        </div>
+        
+    </header>
+    <main class="contenido">
+
+        <div class="container">
+            <p class=" titulo_form">Ingrese la información que se solicite</p>
+
+            <form action="" class="form_container" id="campaña">
+                <div class="form_item">
+                    <label for="carteras">Cartera</label>
+                    <select class="select cartera" name="opciones_carteras" id="carteras"></select>
+                </div>
+                <div class="form_item">
+                    <label for="carteras">Tipo Mensaje</label>
+                    <select class="select tipo_mensaje" name="opciones_mensajes" id="opciones"></select>
+                </div>
+                <div class="form_item">
+                    <label for="nombre">Nombres y Apellidos</label>
+                    <input type="text" id="nombre" placeholder="Ingrese nombres y apellidos">
+                </div>
+                <div class="form_item form_monto" >
+                    <label for="monto">Monto S/.</label>
+                    <input type="text" id="monto" placeholder="Ingrese monto S/.">
+                </div>
+                <div class="form_item form_dni" >
+                    <label for="dni">DNI.</label>
+                    <input type="text" id="dni" placeholder="Ingrese nro DNI">
+                </div>
+                <div class="form_item form_fecha">
+                    <label for="fecha" class="fecha">Fecha limite de Campaña ó excepción:</label>
+                    <input type="date" id="fecha" value="2022-10-10"  min="2020-01-01" max="2030-12-31">
+                </div>
+                <div class="form_item">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" placeholder="Ingrese nro de teléfono">
+                </div>
+                <div class="form_item">
+                    <button type="button" id="btnGenerar">Generar</button>
+                </div>
+                <ul id="lista_errores"></ul>
+            </form>
+
+        </div>
+        <div class="contenedor_output">
+            <textarea id="mensaje" rows="5">
+
+            </textarea>
+            <button id="copy">Click para copiar</button>
+            <span id="respuesta"></span>
+            <a class="link_whatsapp" href="" id="whatsapp"></a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado by &copy; Joel Llacsahuache Copia 2022</p>
+    </footer>
+
+    <script src="js/inicio.js"></script>
+</body>
+
+</html>
